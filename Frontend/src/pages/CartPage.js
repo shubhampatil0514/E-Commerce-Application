@@ -100,7 +100,7 @@ function CartPage() {
     };
     
   return (
-         <div className="  bg-gray-400">
+         <div className="border-gray-600 mx-2">
              <div className="mx-80 border-t-gray-400 rounded-lg bg-white py-4">
                   <div className="" >
                     {isLoading ? (
@@ -151,29 +151,29 @@ function CartPage() {
                     </ul>
                     )}
                   </div>
-                  <div className=" mx-40" >
-                    <div className="bg-gray-200  p-8 ">
-                      <div className="mb-2 flex text-xl justify-between mt-8">
+                  <div className="" >
+                    <div className="bg-gray-200  p-2 ">
+                      <div className="mb-2 flex text-xl justify-between mt-2">
                         <p>Subtotal:</p>
                         <p>₹{calculateSubtotal()}</p>
                       </div>
-                      <div className="bg-gray-200 w-full mx-auto h-0.5 mt-4 mb-4"></div>
-                      <div className="mb-2 flex text-xl justify-between  mt-4">
+                      <div className="bg-gray-200 w-full mx-auto h-0.5 mt-2"></div>
+                      <div className=" flex text-xl justify-between  mt-2">
                         <p>Tax ({(taxRate * 100).toFixed(0)}%):</p>
                         <p>₹{tax.toFixed(2)}</p>
                       </div>
-                      <div className="bg-gray-200 w-full mx-auto h-0.5 mt-4 mb-4"></div>
-                      <div className="mb-2 flex text-xl justify-between  mt-4">
+                      <div className="bg-gray-200 w-full mx-auto h-0.5 mt-2"></div>
+                      <div className=" flex text-xl justify-between  mt-2">
                         <p>Shipping Charges: </p>
                         <p>₹{shippingCharges}</p>
                       </div>
-                      <div className="bg-gray-200 w-full mx-auto h-0.5 mt-4 mb-4"></div>
-                      <div className="mb-2 flex text-xl justify-between font-semibold mt-4">
+                      <div className="bg-gray-200 w-full mx-auto h-0.5 mt-2"></div>
+                      <div className=" flex text-xl justify-between font-semibold mt-2">
                         <p className="text-2xl   ">Total:</p>
                         <p className="text-2xl   ">₹{total.toFixed(2)}</p>
                       </div>
                       <div>
-                      <button className="bg-gray-900 text-white mt-10 w-full rounded-lg px-4 py-2 cursor-pointer"
+                      <button className="bg-gray-900 text-white mt-2 w-full rounded-lg px-4 py-2 cursor-pointer"
                         onClick={handleCheckout}>
                         Checkout
                       </button>

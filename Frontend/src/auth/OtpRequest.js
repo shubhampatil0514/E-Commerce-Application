@@ -22,17 +22,8 @@ function ForgotPassword() {
   };
 
   return (
-    <div className="flex flex-col items-center"
-      style={{
-      backgroundImage: `url('./image/bg2.avif')`, 
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundAttachment: 'fixed', 
-      width: '100vw', 
-      height: '100vh', 
-      }}
-      >
-      <div className="flex flex-col items-center max-w-xs mx-auto p-4 mt-8 bg-green-300 shadow-md rounded">
+    <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center max-w-xs mx-auto p-4 mt-12 bg-gray-900 text-white shadow-md rounded">
         <h2 className="text-2xl font-bold mb-4">Reset Password</h2>
         <form>
           <div className="mb-4">
@@ -41,14 +32,14 @@ function ForgotPassword() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full py-2 px-4 border border-gray-300 rounded focus:outline-none"
+              className="w-full py-2 px-4 border border-gray-300 text-black rounded focus:outline-none"
               required
             />
           </div>       
           <button
             type="submit"
             onClick={handleResetOtp}
-            className="bg-gray-900 text-white py-2 px-4 rounded font-bold cursor-pointer"
+            className="bg-yellow-500 text-black  py-2 px-4 rounded font-bold cursor-pointer"
           >
             Send Otp
           </button>

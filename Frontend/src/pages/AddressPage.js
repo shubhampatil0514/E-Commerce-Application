@@ -29,14 +29,14 @@ function AddressForm({ onClose}) {
   return (
 <div className="flex ml-20">
     <div className="w-1/3 ">
-        <h2 className="text-2xl  mt-4 w-40 bg-green-700  mx-auto text-center rounded-lg text-white font-semibold mb-4">Add Address</h2> 
-        <div className="container  p-4 bg-green-400 rounded shadow-md ">
+        <h2 className="text-2xl  mt-4 w-40 bg-gray-900  mx-auto text-center rounded-lg text-white font-semibold mb-4">Add Address</h2> 
+        <div className="container  p-4 bg-gray-900 rounded shadow-md  ">
         <form onSubmit={handleSubmit}>
             <div className="mb-4">
-            <label htmlFor="firstName" className="block font-semibold">First name *</label>
+            <label htmlFor="firstName" className="block font-semibold text-white">First name *</label>
             <input
                 type="text"
-                id="firstName"
+                id="firstName"bg-gray-900
                 name="firstName"
                 value={formData.firstName}
                 onChange={handleInputChange}
@@ -45,7 +45,7 @@ function AddressForm({ onClose}) {
             />
             </div>
             <div className="mb-4">
-            <label htmlFor="lastName" className="block font-semibold">Last name *</label>
+            <label htmlFor="lastName" className="block font-semibold text-white">Last name *</label>
             <input
                 type="text"
                 id="lastName"
@@ -57,7 +57,7 @@ function AddressForm({ onClose}) {
             />
             </div>
             <div className="mb-4">
-            <label htmlFor="apartment" className="block font-semibold">Apartment, suite, unit*</label>
+            <label htmlFor="apartment" className="block font-semibold text-white">Apartment, suite, unit*</label>
             <input
                 type="text"
                 id="apartment"
@@ -68,7 +68,7 @@ function AddressForm({ onClose}) {
             />
             </div>
             <div className="mb-4">
-            <label htmlFor="streetAddress" className="block font-semibold">Street address </label>
+            <label htmlFor="streetAddress" className="block font-semibold text-white">Street address </label>
             <input
                 type="text"
                 id="streetAddress"
@@ -80,7 +80,7 @@ function AddressForm({ onClose}) {
             />
             </div>
             <div className="mb-4">
-            <label htmlFor="city" className="block font-semibold">Town / City *</label>
+            <label htmlFor="city" className="block font-semibold text-white">Town / City *</label>
             <input
                 type="text"
                 id="city"
@@ -92,7 +92,7 @@ function AddressForm({ onClose}) {
             />
             </div>
             <div className="mb-4">
-            <label htmlFor="state" className="block font-semibold">State *</label>
+            <label htmlFor="state" className="block font-semibold text-white">State *</label>
             <input
                 type="text"
                 id="state"
@@ -104,7 +104,7 @@ function AddressForm({ onClose}) {
             />
             </div>
             <div className="mb-4">
-            <label htmlFor="postalCode" className="block font-semibold">PIN Code *</label>
+            <label htmlFor="postalCode" className="block font-semibold text-white">PIN Code *</label>
             <input
                 type="text"
                 id="postalCode"
@@ -116,7 +116,7 @@ function AddressForm({ onClose}) {
             />
             </div>
             <div className="mb-4">
-            <label htmlFor="orderNotes" className="block font-semibold">Order notes (optional)</label>
+            <label htmlFor="orderNotes" className="block font-semibold text-white">Order notes (optional)</label>
             <textarea
                 id="orderNotes"
                 name="orderNotes"
@@ -130,10 +130,10 @@ function AddressForm({ onClose}) {
     </div>
 
     <div className="w-1/2  mx-auto p-4">
-        <h2 className="text-2xl  mt-4 w-60 bg-green-700  mx-auto text-center rounded-lg text-white font-semibold mb-4">Payment Methods</h2>
+        <h2 className="text-2xl  mt-4 w-60 bg-gray-900  mx-auto text-center rounded-lg text-white font-semibold mb-4">Payment Methods</h2>
         <div className=" ">
               <div className="bg-gray-200  p-10 h-full">
-                <h2 className="text-2xl bg-green-400 rounded-lg py-2 text-center font-semibold">Order Summary</h2>
+                <h2 className="text-2xl bg-gray-900 rounded-lg py-2 text-center font-semibold text-white">Order Summary</h2>
                 <div className="mb-2 text-2xl font-semibold mt-14">
                   <p>Subtotal: ₹{orderSummary.subtotal}</p>
                 </div>
@@ -164,7 +164,7 @@ function AddressForm({ onClose}) {
           </select>
           <button
             type="button"
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md"
+            className="bg-gray-900 text-white font-semibold py-2 px-4 rounded-md"
             >
             Pay and Place Order
           </button>

@@ -34,17 +34,8 @@ function Signup() {
   };
 
   return (
-    <div className="flex flex-col items-center"
-      style={{
-      backgroundImage: `url('./image/bg2.avif')`, 
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundAttachment: 'fixed', 
-      width: '100vw', 
-      height: '100vh', 
-      }}
-      >
-      <div className="flex flex-col items-center max-w-xs mx-auto p-4 mt-8 bg-green-300 shadow-md rounded">
+    <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center max-w-xs mx-auto p-4 mt-12 bg-gray-900 text-slate-200  shadow-md rounded">
         <h2 className="text-2xl font-bold mb-4">Sign Up</h2>
         <form>
           <div className="mb-4 ">
@@ -53,7 +44,7 @@ function Signup() {
               type="text"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              className="w-full py-2 px-4 border rounded border-gray-300 focus:outline-none"
+              className="w-full py-2 px-4 border rounded text-black border-gray-300 focus:outline-none"
               required
             />
           </div>
@@ -63,7 +54,7 @@ function Signup() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full py-2 px-4 border rounded border-gray-300 focus:outline-none"
+              className="w-full py-2 px-4 border rounded border-gray-300 text-black focus:outline-none"
               required
             />
           </div>
@@ -73,7 +64,7 @@ function Signup() {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full py-2 px-4 border rounded border-gray-300 focus:outline-none"
+              className="w-full py-2 px-4 border rounded border-gray-300 text-black focus:outline-none"
               required
             />
           </div>
@@ -89,7 +80,7 @@ function Signup() {
           <button
             type="submit"
             onClick={handleSignup}
-            className="bg-gray-900 text-white py-2 px-4 rounded font-bold cursor-pointer"
+            className="bg-yellow-500 text-black py-2 px-4 rounded font-bold cursor-pointer"
           >
             Sign Up
           </button>

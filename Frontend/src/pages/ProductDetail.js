@@ -183,7 +183,7 @@ function ProductDetailPage() {
                 selectedColor={selectedColor}
                 onColorChange={(color) => setSelectedColor(color)}
               />
-              <button onClick={addToCart} className="bg-green-500 text-black mt-10 mx-28 w-60 rounded-lg px-4 py-2 cursor-pointer justify-center and items-center property">
+              <button onClick={addToCart} className="bg-gray-900 text-white mt-10 mx-28 w-60 rounded-lg px-4 py-2 cursor-pointer justify-center and items-center property">
                 Add to Cart
               </button>
              {addedToCartMessage && (

@@ -81,7 +81,7 @@ function UserProfile() {
         <div className="bg-white rounded-lg shadow-lg p-4">
           <h2 className="text-2xl font-bold mb-4">User Profile</h2>
           <div className="flex items-center">
-            <div className="w-30 h-30 ml-4 rounded-full overflow-hidden">
+            <div className="w-28 h-28 ml-4 rounded-full overflow-hidden">
               <img
                 src={`http://localhost:3005/${user.profilePicture}`}
                 alt={`Product: ${user.name}`}
